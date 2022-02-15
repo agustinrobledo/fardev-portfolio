@@ -1,0 +1,50 @@
+.container{
+    width: 100vw;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid white;
+    margin: 0;
+}
+
+.homeContainer{
+    width: 20%;
+    border-right: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.home{
+    margin-left: 2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.linksContainer{
+    display: flex;
+    width: 35%;
+    align-items: center;
+    text-align: center;
+}
+
+.links{
+    box-sizing: border-box;
+    border-left: 1px solid white;
+    width: 35%;
+    height: 100%;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
