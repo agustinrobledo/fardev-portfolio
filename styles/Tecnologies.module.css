@@ -1,4 +1,4 @@
-.projects{
+.tecnologies{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -44,11 +44,27 @@
     height: 30%;
 }
 
+.projectTwo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border: 1px solid white;
+    width: 70%;
+    height: 30%;
+}
+
 .projectInfo{
     border-left: 1px solid white;
+    width: 100%;
 }
 
 .imageContent{
     width: 30%;
-    height: 30%;
+    height: 100%;
+}
+
+.imageContentTwo{
+    width: 30%;
+    height: 100%;
+    border-left: 1px solid white;
 }
