@@ -1,0 +1,69 @@
+.contact{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.containerStatusBar{
+    display: flex;
+    width: 100%;
+    height: 10%;
+    align-items: center;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.titleContainer{
+    box-sizing: border-box;
+    border-right: 1px solid white;
+    width: 35%;
+    height: 100%;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-left: 4rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.contactContainer{
+    width: 80%;
+    height: 80%;
+    margin: 10em auto;
+    display: flex;
+    border: solid 1px white;
+}
+
+.contactTitle{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 5rem;
+}
+
+.socialsContainer{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    border-left: 1px solid white;
+}
+
+.text{
+    margin-left: 2rem;
+}
+
+.link{
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
+:hover .link{
+    cursor: pointer;
+}
