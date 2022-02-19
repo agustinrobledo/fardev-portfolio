@@ -1,6 +1,8 @@
 import styles from '../../styles/Projects.module.css'
+import {data} from '../data'
 
 const Projects = () => {
+  console.log(data)
   return (
     <>  
       <div className={styles.projects}>
@@ -8,62 +10,22 @@ const Projects = () => {
             <h1 className={styles.titleContainer}>
                 Proyectos
             </h1>
-        </div>
-        <div className={styles.projectsContainer}>
-          <div className={styles.project}>
-            <div className={styles.imageContent}>aca va una imagen</div>
-              <div className={styles.projectInfo}>
-                <h1 className={styles.projectTitle}>
-                    Proyecto 1
-                </h1>
-                <p className={styles.projectDescription}>
-                    Subtitulo
-                </p>
-            </div>
-          </div>
-        <div className={styles.project}>
-            <div className={styles.imageContent}>aca va una imagen</div>
-              <div className={styles.projectInfo}>
-                <h1 className={styles.projectTitle}>
-                    Proyecto 1
-                </h1>
-                <p className={styles.projectDescription}>
-                    Subtitulo
-                </p>
-            </div>
-          </div>
-        </div>
       </div>
-      <div className={styles.projects}>
-        <div className={styles.containerStatusBar}>
-            <h1 className={styles.titleContainer}>
-                Proyectos
-            </h1>
-        </div>
         <div className={styles.projectsContainer}>
-          <div className={styles.project}>
-            <div className={styles.imageContent}>aca va una imagen</div>
-              <div className={styles.projectInfo}>
-                <h1 className={styles.projectTitle}>
-                    Proyecto 1
-                </h1>
-                <p className={styles.projectDescription}>
-                    Subtitulo
-                </p>
-            </div>
-          </div>
+        {data.map(project => (
         <div className={styles.project}>
-            <div className={styles.imageContent}>aca va una imagen</div>
-              <div className={styles.projectInfo}>
-                <h1 className={styles.projectTitle}>
-                    Proyecto 1
-                </h1>
-                <p className={styles.projectDescription}>
-                    Subtitulo
-                </p>
-            </div>
+          <img src={project.img} alt={project.name} className={styles.imageContent}/>
+            <div className={styles.projectInfo}>
+              <h1 className={styles.projectTitle}>
+                  {project.name}
+              </h1>
+              <p className={styles.projectDescription}>
+                  {project.description}
+              </p>
           </div>
         </div>
+        ))}
+      </div>
       </div>
     </>
   )

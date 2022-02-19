@@ -1,4 +1,5 @@
 import styles from '../../styles/Tecnologies.module.css'
+import { technologies } from '../data'
 
 const Tecnologies = () => {
   return (
@@ -17,12 +18,14 @@ const Tecnologies = () => {
               </h1>
             </div>
               <div className={styles.projectInfo}>
-                <h1 className={styles.projectTitle}>
-                    Proyecto 1
-                </h1>
-                <p className={styles.projectDescription}>
-                    Subtitulo
-                </p>
+                <ul className={styles.technologiesList}>
+                  {
+                    technologies.frontend.map(technology => (
+                        <li className={styles.technology}>
+                            {technology}
+                        </li>
+                  ))}
+                </ul>
               </div>
                 <div className={styles.figureContainer}>
                     <div className={styles.square}/>
@@ -35,12 +38,14 @@ const Tecnologies = () => {
               </h1>
             </div>
               <div className={styles.projectInfo}>
-                <h1 className={styles.projectTitle}>
-                    Proyecto 1
-                </h1>
-                <p className={styles.projectDescription}>
-                    Subtitulo
-                </p>
+                <ul className={styles.technologiesList}>
+                  {
+                    technologies.backend.map(technology => (
+                        <li className={styles.technology}>
+                            {technology}
+                        </li>
+                  ))}
+                </ul>
               </div>
                 <div className={styles.figureContainer}>
                     <div className={styles.circle}/>

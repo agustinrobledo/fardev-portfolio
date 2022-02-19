@@ -35,7 +35,7 @@ const Contact = () => {
                     </h1>
                     <Link href="https://www.github.com/agustinrobledo">
                         <h2 className={styles.link}>
-                                /agustinrobledo
+                            /agustinrobledo
                         </h2>
                     </Link>
                 </div>
