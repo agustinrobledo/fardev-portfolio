@@ -3,7 +3,6 @@
     flex-direction: column;
     height: 96vh;
     width: 100%;
-    
     align-items: center;
 }
 
@@ -48,4 +47,30 @@
     justify-content: space-evenly;
     height: 90%;
     width: 100%;
+}
+
+@media screen and (max-width: 1236px){
+
+    .image{
+        height: 30%;
+        display: none;
+    }
+
+    .content{
+        flex-direction: column;
+        height: 80%;
+        width: 60%;
+    }
+    
+    .title{
+        font-size: 1rem;
+    }
+
+    .subtitle{
+        font-size: 3rem;
+    }
+
+    .text{
+        font-size: 1.5rem;
+    }
 }
