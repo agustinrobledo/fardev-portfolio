@@ -55,6 +55,16 @@
     border-left: 1px solid white;
 }
 
+.talk{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50%;
+    font-size: 2rem;
+    font-family: "Work Sans", serif;
+}
+
 .text{
     margin-left: 2rem;
 }
@@ -64,6 +74,49 @@
     text-decoration: none;
 }
 
+.mail{
+    margin-left: 2rem;
+    text-decoration: none;
+}
+
 :hover .link{
     cursor: pointer;
+}
+
+@media screen and (max-width: 1236px){
+    .contactTitle{
+        font-size: 2rem;
+        height: 100%;
+    }
+
+    .contactContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+    }
+
+    .talk{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 2rem;
+        font-family: "Work Sans", serif;
+    }
+
+    .text{
+        font-size: 1.5rem;
+        font-family: 'Work Sans', serif;
+    }
+
+    .socialsContainer{
+        border-top: 1px solid white;
+        border-left: none;
+        width: 100%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 }

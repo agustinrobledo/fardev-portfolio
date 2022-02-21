@@ -13,7 +13,7 @@ const Projects = () => {
       </div>
         <div className={styles.projectsContainer}>
         {data.map(project => (
-        <div className={styles.project}>
+        <div className={styles.project} key={project.name}>
           <img src={project.img} alt={project.name} className={styles.imageContent}/>
             <div className={styles.projectInfo}>
               <h1 className={styles.projectTitle}>

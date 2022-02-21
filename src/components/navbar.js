@@ -13,9 +13,6 @@ function Navbar() {
         </div>
         <div className={styles.linksContainer}>
             <h1 className={styles.links}>
-                Blog
-            </h1>
-            <h1 className={styles.links}>
                 Sobre mi
             </h1>
             <h1 className={styles.links}>

@@ -11,10 +11,12 @@ const Contact = () => {
                 </h1>
             </div>
             <div className={styles.contactContainer}>
-                <h1 className={styles.contactTitle}>
-                    ¿Te interesa mi trabajo? <br/>
-                    ¡Hablemos!
-                </h1>
+                <div className={styles.talk}>
+                    <h1 className={styles.contactTitle}>
+                        ¿Te interesa mi trabajo? <br/>
+                        ¡Hablemos!
+                    </h1>
+                </div>
                 <div className={styles.socialsContainer}>
                     <h1 className={styles.text}>
                         Linkedin:
@@ -27,7 +29,7 @@ const Contact = () => {
                     <h1 className={styles.text}>
                         E-mail:
                     </h1>
-                    <h2 className={styles.text}>
+                    <h2 className={styles.mail}>
                         agustinrobledo59.ar@gmail.com
                     </h2>
                     <h1 className={styles.text}>

@@ -17,7 +17,7 @@ const Tecnologies = () => {
                   Frontend
               </h1>
             </div>
-              <div className={styles.projectInfo}>
+            <div className={styles.projectInfo}>
                 <ul className={styles.technologiesList}>
                   {
                     technologies.frontend.map(technology => (
@@ -26,10 +26,10 @@ const Tecnologies = () => {
                         </li>
                   ))}
                 </ul>
-              </div>
-                <div className={styles.figureContainer}>
+            </div>
+            <div className={styles.figure}>
                     <div className={styles.square}/>
-                </div>
+            </div>
           </div>
           <div className={styles.projectTwo}>
             <div className={styles.imageContentTwo}>
@@ -47,7 +47,7 @@ const Tecnologies = () => {
                   ))}
                 </ul>
               </div>
-                <div className={styles.figureContainer}>
+                <div className={styles.figure}>
                     <div className={styles.circle}/>
                 </div>
           </div>

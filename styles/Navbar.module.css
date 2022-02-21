@@ -24,7 +24,7 @@
 }
 
 .home{
-    margin-left: 2rem;
+    margin-left: 1rem;
     font-size: 1rem;
     margin-top: 1rem;
     
@@ -47,4 +47,23 @@
     justify-content: center;
     align-items: center;
     margin: 0;
+}
+
+@media screen and (max-width: 1236px){
+    .homeContainer{
+        width: 60%;
+    }
+
+    .links{
+        font-size: 0.8rem;
+    }
+
+    .linksContainer{
+        width: 60%;
+        justify-content: flex-end;
+    }
+
+    .homeContainer{
+        border-right: none;
+    }
 }

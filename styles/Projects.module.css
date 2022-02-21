@@ -46,13 +46,17 @@
     height: 16rem;
 }
 
-.projectInfo{
+.technology{
     border-left: 1px solid white;
 }
 
 .imageContent{
-    width: 40%;
+    width: 30%;
     height: 100%
+}
+
+.img{
+    object-fit: cpntain;
 }
 
 .projectTitle{
@@ -66,3 +70,23 @@
     font-size: 1.2rem;
     font-family: "Work Sans", serif;
 }
+
+@media screen and (max-width: 1236px){
+
+    .titleContainer{
+        width: 40%;
+    }
+
+    .imageContent{
+        display: none;
+    }
+
+    .project{
+        height: 60%;
+    }
+
+    .projectTitle{
+        font-size: 1.7rem;
+    }
+}
+
