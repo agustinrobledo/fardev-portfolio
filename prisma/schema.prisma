@@ -20,7 +20,9 @@ model Projects{
   frontend String[]
   backend String[]
   img String
+  video String
   projectType ProjectType
+  github String
 }
 
 enum ProjectType {
