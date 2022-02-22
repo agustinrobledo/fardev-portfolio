@@ -31,9 +31,12 @@ enum ProjectType {
   FULLSTACK
 }
 
-model Technologies{
+model Info{
   id Int @id @default(autoincrement())
   updatedAt DateTime @updatedAt
+  mail String
+  linkedin String
+  githubProfile String
   frontend String[]
   backend String[]
 }
