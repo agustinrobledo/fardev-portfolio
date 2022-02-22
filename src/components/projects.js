@@ -2,7 +2,6 @@ import styles from '../../styles/Projects.module.css'
 import {data} from '../data'
 
 const Projects = () => {
-  console.log(data)
   return (
     <>  
       <div className={styles.projects}>

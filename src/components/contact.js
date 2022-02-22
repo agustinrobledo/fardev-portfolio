@@ -21,7 +21,7 @@ const Contact = () => {
                     <h1 className={styles.text}>
                         Linkedin:
                     </h1>
-                    <Link href="https://www.linkedin.com/in/fernando-agustin-robledo">
+                    <Link href="https://www.linkedin.com/in/fernando-agustin-robledo" passHref>
                         <h2 className={styles.link}>
                             /fernando-agustin-robledo
                         </h2>
@@ -35,7 +35,7 @@ const Contact = () => {
                     <h1 className={styles.text}>
                         Github:
                     </h1>
-                    <Link href="https://www.github.com/agustinrobledo">
+                    <Link href="https://www.github.com/agustinrobledo" passHref>
                         <h2 className={styles.link}>
                             /agustinrobledo
                         </h2>

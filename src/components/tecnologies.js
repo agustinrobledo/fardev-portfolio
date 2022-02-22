@@ -21,7 +21,7 @@ const Tecnologies = () => {
                 <ul className={styles.technologiesList}>
                   {
                     technologies.frontend.map(technology => (
-                        <li className={styles.technology}>
+                        <li key={technology.id} className={styles.technology}>
                             {technology}
                         </li>
                   ))}
@@ -41,7 +41,7 @@ const Tecnologies = () => {
                 <ul className={styles.technologiesList}>
                   {
                     technologies.backend.map(technology => (
-                        <li className={styles.technology}>
+                        <li key={technology.id} className={styles.technology}>
                             {technology}
                         </li>
                   ))}
