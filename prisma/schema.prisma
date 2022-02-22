@@ -28,3 +28,10 @@ enum ProjectType {
   BACKEND
   FULLSTACK
 }
+
+model Technologies{
+  id Int @id @default(autoincrement())
+  updatedAt DateTime @updatedAt
+  frontend String[]
+  backend String[]
+}
