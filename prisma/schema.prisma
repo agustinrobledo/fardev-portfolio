@@ -11,8 +11,7 @@ datasource db {
 }
 
 model Projects{
-  id Int @id
-  createdAt DateTime @default(now())
+  id Int @id @default(autoincrement())
   updatedAt DateTime @updatedAt
   name String
   description String
