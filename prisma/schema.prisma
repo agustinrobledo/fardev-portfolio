@@ -19,10 +19,10 @@ model Projects{
   endDate String
   frontend String[]
   backend String[]
-  img String
-  video String
+  img String?
+  video String?
   projectType ProjectType
-  github String
+  github String?
 }
 
 enum ProjectType {
