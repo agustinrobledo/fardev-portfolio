@@ -8,6 +8,8 @@ export const data = [
         frontend: ["HTML5", "Javascript", "Sass", "React", "Redux"],
         backend: ["Node.js", "Express", "Sequelize", "PostgreSQL"],
         img: "https://agustinrobledo.vercel.app/img/PI-pic.png",
+        video: "",
+        github: "",
         description: "Este proyecto fue realizado durante el cursado de Henry, este proyecto integra tecnologías tanto de Frontend como de Backend."
     },
     {
