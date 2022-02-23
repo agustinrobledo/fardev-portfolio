@@ -4,8 +4,12 @@ import Hero from '../src/components/hero'
 import Projects from '../src/components/projects'
 import Tecnologies from '../src/components/tecnologies'
 import Contact from '../src/components/contact'
+import { PrismaClient } from '@prisma/client'
 
-export default function Home() {
+
+export default function Home({projects, info}) {
+  console.log(projects, info)
+
   return (
    <>
     <Navbar />
@@ -16,3 +20,14 @@ export default function Home() {
    </>
   )
 }
+
+export async function getStaticProps() {
+  const prisma = new PrismaClient()
+  const info = await prisma.info.findMany()
+  return {
+    props: {
+      info
+    }
+  }
+}
+
