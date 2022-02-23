@@ -7,12 +7,13 @@ import Contact from '../src/components/contact'
 import { PrismaClient } from '@prisma/client'
 
 
-export default function Home({info}) {
+export default function Home({info, projects, experience}) {
+  console.log(experience)
   return (
    <>
     <Navbar />
     <Hero />
-    <Projects />
+    <Projects projects={projects} />
     <Tecnologies/>
     <Contact info={info}/>
    </>
@@ -21,10 +22,14 @@ export default function Home({info}) {
 
 export async function getStaticProps() {
   const prisma = new PrismaClient()
+  const experience = await prisma.experience.findMany()
+  const projects = await prisma.projects.findMany()
   const info = await prisma.info.findMany()
   return {
     props: {
-      info
+      info,
+      projects,
+      experience
     }
   }
 }
