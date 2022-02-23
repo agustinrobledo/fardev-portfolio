@@ -7,16 +7,14 @@ import Contact from '../src/components/contact'
 import { PrismaClient } from '@prisma/client'
 
 
-export default function Home({projects, info}) {
-  console.log(projects, info)
-
+export default function Home({info}) {
   return (
    <>
     <Navbar />
     <Hero />
     <Projects />
     <Tecnologies/>
-    <Contact/>
+    <Contact info={info}/>
    </>
   )
 }

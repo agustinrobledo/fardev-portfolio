@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from '../../styles/contact.module.css'
 
-const Contact = () => {
+const Contact = ({info}) => {
   return (
     <>
         <div className={styles.contact}>
