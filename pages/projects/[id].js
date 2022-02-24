@@ -2,7 +2,6 @@ import { PrismaClient } from "@prisma/client";
 
 
 export default function ProjectInfo({project}){
-    console.log(project)
     return (
         <>
             <h1>
@@ -16,11 +15,25 @@ export default function ProjectInfo({project}){
     )
 }
 
-export async function getServerSideProps({ query }) {
+export async function getStaticPaths(){
+    const prisma = new PrismaClient()
+    const projects = await prisma.projects.findMany()
+    const paths = projects.map(project => ({
+        params: {
+            id: project.id.toString()
+        }
+    }))
+    return {
+        paths,
+        fallback: false
+    }
+}
+
+export async function getStaticProps({ params }){
     const prisma = new PrismaClient()
     const project = await prisma.projects.findUnique({
         where: {
-            id: Number(query.id)
+            id: Number(params.id)
         }
     })
     return {
@@ -28,5 +41,6 @@ export async function getServerSideProps({ query }) {
             project
         }
     }
+
 }
 
