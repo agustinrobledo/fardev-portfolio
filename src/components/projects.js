@@ -1,7 +1,6 @@
 import styles from '../../styles/Projects.module.css'
-import {data} from '../data'
 
-const Projects = () => {
+const Projects = ({projects}) => {
   return (
     <>  
       <div className={styles.projects}>
@@ -11,7 +10,7 @@ const Projects = () => {
             </h1>
       </div>
         <div className={styles.projectsContainer}>
-        {data.map(project => (
+        {projects?.map(project => (
         <div className={styles.project} key={project.name}>
           <img src={project.img} alt={project.name} className={styles.imageContent}/>
             <div className={styles.projectInfo}>

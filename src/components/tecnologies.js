@@ -1,7 +1,6 @@
 import styles from '../../styles/Tecnologies.module.css'
-import { technologies } from '../data'
 
-const Tecnologies = () => {
+const Tecnologies = ({technologies}) => {
   return (
     <>
         <div className={styles.tecnologies}>
@@ -20,8 +19,8 @@ const Tecnologies = () => {
             <div className={styles.projectInfo}>
                 <ul className={styles.technologiesList}>
                   {
-                    technologies.frontend.map(technology => (
-                        <li key={technology.id} className={styles.technology}>
+                    technologies[0]?.frontend.map((technology, index) => (
+                        <li key={index} className={styles.technology}>
                             {technology}
                         </li>
                   ))}
@@ -40,8 +39,8 @@ const Tecnologies = () => {
               <div className={styles.projectInfo}>
                 <ul className={styles.technologiesList}>
                   {
-                    technologies.backend.map(technology => (
-                        <li key={technology.id} className={styles.technology}>
+                    technologies[0]?.backend.map((technology, index)=> (
+                        <li key={index} className={styles.technology}>
                             {technology}
                         </li>
                   ))}

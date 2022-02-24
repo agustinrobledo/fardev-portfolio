@@ -46,6 +46,10 @@
     height: 16rem;
 }
 
+.projectInfo{
+    width: 70%;
+}
+
 .technology{
     border-left: 1px solid white;
 }
@@ -56,7 +60,7 @@
 }
 
 .img{
-    object-fit: cpntain;
+    width: 100%;
 }
 
 .projectTitle{
