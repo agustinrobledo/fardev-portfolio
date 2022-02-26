@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import styles from '../../styles/Navbar.module.css'
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav className={styles.container}>
         <div className={styles.homeContainer}>

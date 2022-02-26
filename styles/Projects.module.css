@@ -69,6 +69,11 @@
     font-family: "Work Sans", serif;
 }
 
+.projectTitle:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .projectDescription{
     margin-left: 1rem;
     font-size: 1.2rem;

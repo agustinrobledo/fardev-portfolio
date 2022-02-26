@@ -1,16 +1,12 @@
 import { PrismaClient } from "@prisma/client";
-
+import Navbar from "../../src/components/navbar";
+import Project from "../../src/components/project";
 
 export default function ProjectInfo({project}){
     return (
-        <>
-            <h1>
-                {project.name}
-            </h1>
-            <p>
-                {project.description}
-            </p>
-            <video src={project.video} alt={project.name} controls/>
+        <>  
+            <Navbar />
+            <Project project={project}/>
         </>
     )
 }
