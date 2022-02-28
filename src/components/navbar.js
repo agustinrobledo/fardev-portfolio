@@ -11,14 +11,14 @@ const Navbar = () => {
                 </Link>
             </h1>
         </div>
-        <div className={styles.linksContainer}>
+        {/* <div className={styles.linksContainer}>
             <h1 className={styles.links}>
                 Sobre mi
             </h1>
             <h1 className={styles.links}>
                 Contacto
             </h1>
-        </div>
+        </div> */}
     </nav>
   )
 }

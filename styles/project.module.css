@@ -1,0 +1,27 @@
+.statusBarContainer{
+    display: flex;
+    height: 5rem;
+    width: 100%;
+    border: 1px solid white;
+    align-items: center;
+}
+
+.title{
+    height: 100%;
+    border-right: 1px solid white;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    font-size: 2rem;
+}
+
+.projectContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dates{
+    display: flex;
+    width: 100%;
+}
