@@ -18,10 +18,67 @@
 .projectContainer{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
 }
 
 .dates{
     display: flex;
-    width: 100%;
+    width: 80%;
+    justify-content: space-between;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.description{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.technologies{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.projectVideo{
+    margin-top: 1rem;
+}
+
+.projectImg{
+    margin-top: 2rem;
+}
+
+.links{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+.contact{
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactTitle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.contactLink{
+    text-decoration: underline;
+    cursor: pointer;
 }
