@@ -68,4 +68,7 @@
     .homeContainer{
         border-right: none;
     }
+    .container{
+        height: 8vh;
+    }
 }
