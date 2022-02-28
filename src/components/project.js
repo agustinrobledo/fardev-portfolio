@@ -2,7 +2,6 @@ import styles from '../../styles/project.module.css'
 import Link from 'next/link'
 
 const Project = ({project, info}) => {
-  console.log(info)
   return (
     <>
       <div className={styles.statusBarContainer}>
