@@ -1,9 +1,14 @@
 import Link from 'next/link'
 import styles from '../../styles/Navbar.module.css'
+import { motion } from 'framer-motion'
+
 
 const Navbar = () => {
   return (
-    <nav className={styles.container}>
+    <motion.nav 
+    initial={{ opacity: 0, y: -100 }}
+    animate={{ opacity: 1, y: 0 }}
+    className={styles.container}>
         <div className={styles.homeContainer}>
             <h1 className={styles.home}>
                 <Link href="/">
@@ -19,7 +24,7 @@ const Navbar = () => {
                 Contacto
             </h1>
         </div> */}
-    </nav>
+    </motion.nav>
   )
 }
 

@@ -1,15 +1,19 @@
 import styles from '../../styles/project.module.css'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+
 
 const Project = ({project, info}) => {
+
   return (
     <>
-      <div className={styles.statusBarContainer}>
+      <div
+      className={styles.statusBarContainer}>
         <h1 className={styles.title}>
           {project.name}
         </h1>
       </div>
-      <div className={styles.projectContainer}>
+      <div  className={styles.projectContainer}>
         <div className={styles.dates}>
           <p>
             Fecha de inicio: {project.startDate}
