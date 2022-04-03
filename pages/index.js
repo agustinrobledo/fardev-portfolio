@@ -8,13 +8,13 @@ import { PrismaClient } from '@prisma/client'
 
 export default function Home({info, projects, experience}) {
   return (
-   <>
+   <div className="font-sans w-full justify-center items-center flex-col">
     <Navbar />
     <Hero />
     <Projects projects={projects} />
     <Tecnologies technologies={info}/>
     <Contact info={info}/>
-   </>
+   </div>
   )
 }
 
