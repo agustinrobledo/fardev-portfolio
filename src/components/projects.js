@@ -31,9 +31,9 @@ const Projects = ({projects}) => {
 
   return (
     <>  
-      <div ref={ref} className={styles.projects}>
-        <div className={styles.containerStatusBar}>
-            <h1 className={styles.titleContainer}>
+      <div ref={ref} className={"container flex mx-auto py-10 flex-col"}>
+        <div className={"flex w-auto h-6 align-middle text-center"}>
+            <h1 className={"ml-4 text-xl font-bold"}>
                 Proyectos
             </h1>
       </div>
