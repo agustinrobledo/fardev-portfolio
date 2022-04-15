@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import styles from '../../styles/Projects.module.css'
 import { motion, useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { useEffect } from 'react'
@@ -30,29 +29,29 @@ const Projects = ({projects}) => {
   }, [inView])
 
   return (
-    <>  
+    <>
       <div ref={ref} className={"container flex mx-auto py-10 flex-col"}>
         <div className={"flex w-auto h-6 align-middle text-center"}>
-            <h1 className={"ml-4 text-xl font-bold"}>
+            <h1 className={"ml-4 text-2xl font-bold"}>
                 Proyectos
             </h1>
       </div>
-        <motion.div animate={animation} className={styles.projectsContainer}>
+        <motion.div animate={animation} className={"flex flex-col w-auto gap-20 mt-20"}>
         {projects?.map(project => (
-        <div className={styles.project} key={project.name}>
-          <img src={project.img} alt={project.name} className={styles.imageContent}/>
-            <div className={styles.projectInfo}>
+        <div className={"flex w-auto h-50"} key={project.name}>
+          <img src={project.img} alt={project.name} className={"w-1/4"}/>
+            <div className={"w-2/4"}>
               <Link href={`./projects/${project.id}`} passHref>
-              <motion.h1 
+              <motion.h1
               whileHover={{
                 textDecoration: 'underline',
                 cursor: 'pointer'
               }}
-              className={styles.projectTitle}>
+              className={"ml-3 text-4xl font-bold"}>
                   {project.name}
               </motion.h1>
               </Link>
-              <p className={styles.projectDescription}>
+              <p className={"ml-3 mt-2 text-xl font-sans "}>
                   {project.description}
               </p>
           </div>
